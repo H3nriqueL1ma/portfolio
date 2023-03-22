@@ -61,6 +61,22 @@ nav ul li {
   cursor: pointer;
 }
 
+#html_logo {
+  cursor: pointer;
+}
+
+#css_logo {
+  cursor: pointer;
+}
+
+#js_logo {
+  cursor: pointer;
+}
+
+#python_logo {
+  cursor: pointer;
+}
+
 .cursor {
   font-weight: 700;
   animation: 1s blink step-end infinite;
