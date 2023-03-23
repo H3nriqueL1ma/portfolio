@@ -17,8 +17,8 @@ const cssContent = document.querySelector('#css-content')
 const jsContent = document.querySelector('#js-content')
 const pythonContent = document.querySelector('#python-content')
 
-about.addEventListener('click', () => {  //have to change this one 
-  const aboutBox = new WinBox({  //have to change this one 
+about.addEventListener('click', () => {
+  const aboutBox = new WinBox({
     title: 'Sobre Mim',
     // modal: true,
     width: '400px',
@@ -27,7 +27,7 @@ about.addEventListener('click', () => {  //have to change this one
     right: 50,
     bottom: 50,
     left: 50,
-    mount: aboutContent, //have to change this one 
+    mount: aboutContent,
     onfocus: function () {
       this.setBackground('#00aa00')
     },
@@ -37,8 +37,8 @@ about.addEventListener('click', () => {  //have to change this one
   })
 })
 
-contact.addEventListener('click', () => {  //have to change this one 
-  const contactBox = new WinBox({  //have to change this one 
+contact.addEventListener('click', () => {
+  const contactBox = new WinBox({
     title: 'Contato',
     // modal: true,
     width: '400px',
@@ -47,7 +47,7 @@ contact.addEventListener('click', () => {  //have to change this one
     right: 50,
     bottom: 50,
     left: 50,
-    mount: contactContent, //have to change this one 
+    mount: contactContent,
     onfocus: function () {
       this.setBackground('#00aa00')
     },
@@ -57,8 +57,8 @@ contact.addEventListener('click', () => {  //have to change this one
   })
 })
 
-project.addEventListener('click', () => { //have to change this one 
-  const ProjectBox = new WinBox({ //have to change this one 
+project.addEventListener('click', () => {
+  const ProjectBox = new WinBox({
     title: 'Meus projetos',
     width: '400px',
     height: '400px',
@@ -66,7 +66,7 @@ project.addEventListener('click', () => { //have to change this one
     right: 50,
     bottom: 50,
     left: 50,
-    mount: projectContent, //have to change this one 
+    mount: projectContent,
     onfocus: function () {
       this.setBackground('#00aa00')
     },
