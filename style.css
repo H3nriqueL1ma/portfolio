@@ -111,3 +111,22 @@ nav ul li {
 .hidden {
   display: none;
 }
+
+.button {
+  display: inline-block;
+  font-family: 'Roboto Mono', sans-serif;
+  transition: 0.3s;
+  border: 0;  
+  width: 60px;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  cursor: pointer;
+  text-align: center;
+  background-color: #8ade37;
+}
+
+.button:hover {
+  color: white;
+  transform: scale(1.1);
+}
