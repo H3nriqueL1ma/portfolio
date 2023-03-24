@@ -7,6 +7,10 @@ const html = document.querySelector('#html_logo')
 const css = document.querySelector('#css_logo')
 const js = document.querySelector('#js_logo')
 const python = document.querySelector('#python_logo')
+const button = document.querySelector('.button')
+button.addEventListener('click', function() {
+  history.back()
+})
 
 //edit contain 2
 const aboutContent = document.querySelector('#about-content')
