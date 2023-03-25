@@ -24,7 +24,6 @@ const pythonContent = document.querySelector('#python-content')
 about.addEventListener('click', () => {
   const aboutBox = new WinBox({
     title: 'Sobre Mim',
-    // modal: true,
     width: '400px',
     height: '400px',
     top: 50,
@@ -44,7 +43,6 @@ about.addEventListener('click', () => {
 contact.addEventListener('click', () => {
   const contactBox = new WinBox({
     title: 'Contato',
-    // modal: true,
     width: '400px',
     height: '400px',
     top: 80,
