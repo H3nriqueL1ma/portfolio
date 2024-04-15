@@ -3,14 +3,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Mate+SC&display=swap')
 
 #container
-    font-family: "Poppins", sans-serif
-    background-color: blue
+    font-family: "Poppins", sans-serif  
     max-width: 100%
+    background: rgb(54,53,77)
+    background: linear-gradient(90deg, rgba(54,53,77,1) 26%, rgba(76,74,110,1) 100%)
     
     #menu
         display: flex
-        background-color: #36354D
-        height: 140px
+        height: 100px
         max-width: 100%
 
         #buttons
@@ -26,14 +26,12 @@
                 font-weight: 600
                 color: rgb(177, 177, 177)
                 border: none
-                border-bottom: 4px solid rgb(90, 90, 90)
                 border-radius: 0px
                 background: none
                 transition: 0.3s
 
                 &:hover
                     color: rgb(10, 10, 10)
-                    border-bottom-color: #0800ff
 
             button + button
                 margin-left: 50px
@@ -41,9 +39,54 @@
             span + button
                 margin-left: 100px
 
+    #content
+        color: black
+        min-height: 81.9vh
+        color: rgb(177, 177, 177)
+
+        #title
+            font-weight: 700
+            font-size: 50px
+            text-shadow: 2px 0 black, -2px 0 black, 0 2px black, 0 -2px black, 1px 1px black, -1px -1px black, 1px -1px black, -1px 1px black
+
+        h4
+            font-weight: 400
+            color: black
+
+        #text
+            padding: 5px 0
+
+        button
+            transition: 0.4s
+            border: none
+            background: none
+
+            &:hover
+                transform: scale(1.2)
+
+                a
+                    color: black
+
+            a
+                transition: 0.4s
+                font-size: 40px
+                color: rgb(177, 177, 177)
+
+        button + button
+            margin-left: 5px !important
+
+        #content-cont
+            width: 420px
+
+        #img
+            transition: 0.4s
+
+            &:hover
+                transform: scale(1.027)
+
 .emerge
     background-color: orange
-    height: 400px
+    height: 500px
     position: fixed
     right: -1366px
     transition: right 0.8s ease

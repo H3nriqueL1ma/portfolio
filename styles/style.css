@@ -2,13 +2,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Mate+SC&display=swap");
 #container {
   font-family: "Poppins", sans-serif;
-  background-color: blue;
   max-width: 100%;
+  background: rgb(54, 53, 77);
+  background: linear-gradient(90deg, rgb(54, 53, 77) 26%, rgb(76, 74, 110) 100%);
 }
 #container #menu {
   display: flex;
-  background-color: #36354D;
-  height: 140px;
+  height: 100px;
   max-width: 100%;
 }
 #container #menu #buttons span {
@@ -23,14 +23,12 @@
   font-weight: 600;
   color: rgb(177, 177, 177);
   border: none;
-  border-bottom: 4px solid rgb(90, 90, 90);
   border-radius: 0px;
   background: none;
   transition: 0.3s;
 }
 #container #menu #buttons button:hover {
   color: rgb(10, 10, 10);
-  border-bottom-color: #0800ff;
 }
 #container #menu #buttons button + button {
   margin-left: 50px;
@@ -38,10 +36,55 @@
 #container #menu #buttons span + button {
   margin-left: 100px;
 }
+#container #content {
+  color: black;
+  min-height: 81.9vh;
+  color: rgb(177, 177, 177);
+}
+#container #content #title {
+  font-weight: 700;
+  font-size: 50px;
+  text-shadow: 2px 0 black, -2px 0 black, 0 2px black, 0 -2px black, 1px 1px black, -1px -1px black, 1px -1px black, -1px 1px black;
+}
+#container #content h4 {
+  font-weight: 400;
+  color: black;
+}
+#container #content #text {
+  padding: 5px 0;
+}
+#container #content button {
+  transition: 0.4s;
+  border: none;
+  background: none;
+}
+#container #content button:hover {
+  transform: scale(1.2);
+}
+#container #content button:hover a {
+  color: black;
+}
+#container #content button a {
+  transition: 0.4s;
+  font-size: 40px;
+  color: rgb(177, 177, 177);
+}
+#container #content button + button {
+  margin-left: 5px !important;
+}
+#container #content #content-cont {
+  width: 420px;
+}
+#container #content #img {
+  transition: 0.4s;
+}
+#container #content #img:hover {
+  transform: scale(1.027);
+}
 
 .emerge {
   background-color: orange;
-  height: 400px;
+  height: 500px;
   position: fixed;
   right: -1366px;
   transition: right 0.8s ease;
