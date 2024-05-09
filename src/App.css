@@ -1,0 +1,83 @@
+@import url('https://fonts.cdnfonts.com/css/perfect-dos-vga-437');
+
+#main {
+    font-family: 'Perfect DOS VGA 437 Win', sans-serif;
+    background-color: black;
+    height: 100vh;
+}
+
+#img {
+    opacity: 0;
+}
+
+#name-bios {
+    margin-bottom: 20px !important;
+    opacity: 0;
+}
+
+#memory, #skills, #learnings, #started-portfolio, #modules, #graphic, #starting-portfolio {
+    opacity: 0;
+}
+
+span {
+    color: rgb(0, 170, 0);
+}
+
+#main div img {
+    width: 500px;
+    height: 156px;
+    margin-left: -30px;
+    margin-top: -10px;
+}
+#main p {
+    color: white;
+    margin: 0;
+}
+
+#navbar {
+    background-color: black !important;
+    height: 100px;
+}
+
+.nav-item a {
+    color: white;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.nav-item a:hover {
+    color: rgb(46, 46, 221) !important;
+}
+
+#card {
+    border: 2px solid white;
+    height: 500px;
+    width: 90vw;
+    margin-top: 5px;
+    color: white;
+}
+
+#card h1 {
+    color: rgb(46, 46, 221);
+    font-size: 70pt;
+}
+
+#card a {
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+#card a i {
+    font-size: 40pt;
+    transition: 0.4s;
+    cursor: pointer;
+    color: white;
+}
+
+#card a i:hover {
+    color: rgb(46, 46, 221);
+}
+
+#card a + a {
+    margin-left: 30px;
+}
