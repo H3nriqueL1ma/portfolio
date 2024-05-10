@@ -41,9 +41,31 @@ span {
     margin: 0;
 }
 
+.navbar {
+    --bs-navbar-toggler-focus-width: 0 !important;
+    --bs-navbar-padding-y: 2rem !important;
+}
+
 #navbar {
     background-color: black !important;
-    height: 100px;
+    height: 80px;
+}
+
+#navbar ul {
+    background-color: rgba(0, 0, 0, 0.7) !important;
+}
+
+#navbar button {
+    border: none;
+}
+
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    border: none;
+    box-shadow: none;
 }
 
 .nav-item a {
@@ -58,9 +80,9 @@ span {
 
 #card {
     border: 2px solid white;
-    height: 500px;
+    border-radius: 2px;
+    min-height: 470px;
     width: 90vw;
-    margin: 4% 0;
     color: white;
 }
 
@@ -87,4 +109,8 @@ span {
 
 #card a + a {
     margin-left: 30px;
+}
+
+#techs-content div + div {
+    margin-left: 20px;
 }
