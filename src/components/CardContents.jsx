@@ -1,8 +1,18 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable import/no-anonymous-default-export */
-import React from "react";
+import { React, useState, useEffect } from "react";
 
 export function MainAfterContent() {
+    const [showMain, setShowMain] = useState(false);
+
+    useEffect(() => {
+        const about = document.querySelector("#sobre");
+
+        about.addEventListener("click", () => {
+            setShowMain(true);
+        });
+    }, [])
+
     return (
         <>
             <div className="row m-0 justify-content-center">
@@ -34,14 +44,13 @@ export function MainAfterContent() {
                 <div id="card" className="p-4 text-center align-content-center">
                     <h1>Henrique Lima</h1>
                     <h2>Desenvolvedor Back-end e Baixo Nível.</h2>
-                </div>
-                <div>
                     <a href="https://github.com/H3nriqueL1ma" target="_blank" rel="noreferrer noopener">
                         <i className="bi bi-github"></i>
                     </a> 
                     <a href="https://www.linkedin.com/in/henrique-lima-51b957264/" target="_blank" rel="noreferrer noopener">
                         <i className="bi bi-linkedin"></i>
                     </a> 
+                    {showMain && <AboutContent />}
                 </div>
             </div>
         </>

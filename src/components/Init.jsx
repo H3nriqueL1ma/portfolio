@@ -1,93 +1,87 @@
 /* eslint-disable jsx-a11y/alt-text */
 import { React, useState, useEffect } from "react";
-import { MainAfterContent, HomeContent, AboutContent } from './CardContents';
+import { MainAfterContent } from './CardContents';
 
 
 export default function InitEntrySystem() {
-    const [showMainContent, setShowMainContent] = useState(false);
-    
-    useEffect(() => {
-        window.addEventListener("load", () => {
-            const main = document.querySelector("#main");
-            const image = document.querySelector("#img");
-            const nameBios = document.querySelector("#name-bios");
-            const memory = document.querySelector("#memory");
-            const skills = document.querySelector("#skills");
-            const learnings = document.querySelector("#learnings");
-            const startedPortfolio = document.querySelector("#started-portfolio");
-            const modules = document.querySelector("#modules");
-            const graphic = document.querySelector("#graphic");
-            const startingPortfolio = document.querySelector("#starting-portfolio");  
-    
-            setTimeout(() => {
-                image.setAttribute("style", "opacity: 1;")
-            }, 1000);
-        
-            setTimeout(() => {
-                nameBios.setAttribute("style", "opacity: 1;");
-            }, 1500);
-        
-            setTimeout(() => {
-                memory.setAttribute("style", "opacity: 1;");
-            }, 2500);
-        
-            setTimeout(() => {
-                skills.setAttribute("style", "opacity: 1;");
-            }, 3000);
-        
-            setTimeout(() => {
-                learnings.setAttribute("style", "opacity: 1;");
-            }, 3500);
-        
-            setTimeout(() => {
-                startedPortfolio.setAttribute("style", "opacity: 1;");
-            }, 4000);
-        
-            setTimeout(() => {
-                modules.setAttribute("style", "opacity: 1;");
-            }, 4500);
-        
-            setTimeout(() => {
-                graphic.setAttribute("style", "opacity: 1;");
-            }, 5000);
-        
-            setTimeout(() => {
-                startingPortfolio.setAttribute("style", "opacity: 1;");
-            }, 5500);
-        
-            setTimeout(() => {
-                main.innerHTML = '';
-            }, 6000);
-    });    
-    }, []);
+    const [showMain, setShowMain] = useState(false);
 
-    const home = document.querySelector("#home");
-    const about = document.querySelector("#sobre");
-    const card = document.querySelector("#card");
-  
-    home.addEventListener("click", () => {
-        card.innerHTML = '';
-        card.innerHTML = `
-          <HomeContent />
-        `;
-    });
-  
-    about.addEventListener("click", () => {
-        card.style.alignContent = "start";
-        card.innerHTML = '';
-        card.innerHTML = `
-          <AboutContent />
-        `;
-    })
+    useEffect(() => {
+        const image = document.querySelector("#img");
+        const nameBios = document.querySelector("#name-bios");
+        const memory = document.querySelector("#memory");
+        const skills = document.querySelector("#skills");
+        const learnings = document.querySelector("#learnings");
+        const startedPortfolio = document.querySelector("#started-portfolio");
+        const modules = document.querySelector("#modules");
+        const graphic = document.querySelector("#graphic");
+        const startingPortfolio = document.querySelector("#starting-portfolio"); 
+        
+        setTimeout(() => {
+            image.style.display = "block";
+            image.style.opacity = 1;
+        }, 1000);
+            
+        setTimeout(() => {
+            nameBios.style.display = "block";
+            nameBios.style.opacity = 1;
+        }, 1500);
+            
+        setTimeout(() => {
+            memory.style.display = "block";
+            memory.style.opacity = 1;
+        }, 2500);
+            
+        setTimeout(() => {
+            skills.style.display = "block";
+            skills.style.opacity = 1;
+        }, 3000);
+            
+        setTimeout(() => {
+            learnings.style.display = "block";
+            learnings.style.opacity = 1;
+        }, 3500);
+            
+        setTimeout(() => {
+            startedPortfolio.style.display = "block";
+            startedPortfolio.style.opacity = 1;
+        }, 4000);
+            
+        setTimeout(() => {
+            modules.style.display = "block";
+            modules.style.opacity = 1;
+        }, 4500);
+            
+        setTimeout(() => {
+            graphic.style.display = "block";
+            graphic.style.opacity = 1;
+        }, 5000);
+            
+        setTimeout(() => {
+            startingPortfolio.style.display = "block";
+            startingPortfolio.style.opacity = 1;
+        }, 5500);
+
+        setTimeout(() => {
+            const elements = document.querySelectorAll(".fade-in");
+            elements.forEach((el, index) => {
+                setTimeout(() => {
+                    el.style.display = "none";
+                    el.style.opacity = 0;
+                }, (index + 1) * 100);
+            });
+
+            setShowMain(true);
+        }, 6000);
+    }, []);
 
     return (
         <>
             <div id="main">
-                {showMainContent && <MainAfterContent />}
                 <div id="img" className="fade-in">
                     <img src="Logo-Portfolio.png" />
                 </div>
-                <div className="fade-in p-2">
+                <div id="elements" className="fade-in p-2">
                     <p id="name-bios" className="fade-in">
                         Henrique Lima (C)2024.
                     </p>
@@ -113,6 +107,7 @@ export default function InitEntrySystem() {
                         Starting Portfolio...
                     </p>
                 </div>
+                {showMain && <MainAfterContent />}
             </div>
         </>
     );

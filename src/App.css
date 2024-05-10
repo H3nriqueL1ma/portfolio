@@ -7,15 +7,22 @@
 }
 
 #img {
+    display: none;
     opacity: 0;
+}
+
+#elements {
+    margin-left: 10px;
 }
 
 #name-bios {
     margin-bottom: 20px !important;
+    display: none;
     opacity: 0;
 }
 
 #memory, #skills, #learnings, #started-portfolio, #modules, #graphic, #starting-portfolio {
+    display: none;
     opacity: 0;
 }
 
@@ -53,7 +60,7 @@ span {
     border: 2px solid white;
     height: 500px;
     width: 90vw;
-    margin-top: 5px;
+    margin: 4% 0;
     color: white;
 }
 
@@ -63,7 +70,7 @@ span {
 }
 
 #card a {
-    text-decoration: none;
+    text-decoration: 0;
     margin-top: 10px;
 }
 
