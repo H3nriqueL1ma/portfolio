@@ -114,3 +114,9 @@ span {
 #techs-content div + div {
     margin-left: 20px;
 }
+
+.portfolio-card {
+    width: 300px;
+    border: 2px solid white;
+    border-radius: 2px;
+}

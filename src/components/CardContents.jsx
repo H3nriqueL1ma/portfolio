@@ -4,16 +4,19 @@ import { React, useState, useEffect } from "react";
 
 export function MainAfterContent() {
     const [showMain, setShowMain] = useState(false);
+    const [showMain2, setShowMain2] = useState(false);
 
     useEffect(() => {
         const home = document.querySelector("#home");
         const about = document.querySelector("#sobre");
+        const portfolio = document.querySelector("#portfolio");
 
         const elements = document.querySelectorAll(".fade-in-2");
         const elementsInline = document.querySelectorAll(".fade-in-2-inline");
 
         home.addEventListener("click", () => {
             setShowMain(false);
+            setShowMain2(false);
             elements.forEach((el) => {
                 el.style.display = "block";
                 el.style.opacity = 1;
@@ -25,6 +28,7 @@ export function MainAfterContent() {
         });
 
         about.addEventListener("click", () => {
+            setShowMain2(false);
             elements.forEach((el) => {
                 el.style.display = "none";
                 el.style.opacity = 0;
@@ -34,6 +38,19 @@ export function MainAfterContent() {
                 el.style.opacity = 0;
             });
             setShowMain(true);
+        });
+
+        portfolio.addEventListener("click", () => {
+            setShowMain(false);
+            elements.forEach((el) => {
+                el.style.display = "none";
+                el.style.opacity = 0;
+            });
+            elementsInline.forEach((el) => {
+                el.style.display = "none";
+                el.style.opacity = 0;
+            });
+            setShowMain2(true);
         });
     }, [])
 
@@ -78,37 +95,19 @@ export function MainAfterContent() {
                         <i className="bi bi-linkedin"></i>
                     </a> 
                     {showMain && <AboutContent />}
+                    {showMain2 && <PortfolioContent />}
                 </div>
             </div>
         </>
     );
 };
 
-export function HomeContent() {
-    return (
-        <>
-            <div>
-                <h1>Henrique Lima</h1>
-                <h2>Desenvolvedor Back-end e Baixo Nível.</h2>
-                <div>
-                    <a href="https://github.com/H3nriqueL1ma" target="_blank" rel="noreferrer noopener">
-                        <i classNameName="bi bi-github"></i>
-                    </a> 
-                    <a href="https://www.linkedin.com/in/henrique-lima-51b957264/" target="_blank" rel="noreferrer noopener">
-                        <i classNameName="bi bi-linkedin"></i>
-                    </a> 
-                </div>
-            </div>
-        </>
-    );
-};
-
-export function AboutContent() {
+function AboutContent() {
     return (
         <>
             <div className="text-start">
                 <h4 style={ {backgroundColor: "white", color: "black", padding: "4px 5px 0"} }>Olá! Me chamo Henrique!</h4>
-                <p style={ {margin: "10px 5px"} }>Sou desenvolvedor back-end, ainda sou um iniciante na área e não possuo experiência profissional, mas sempre estou estudando as tecnologias mais utilizadas no mercado. Além disso, nos tempos vagos sou desenvolvedor de baixo nível por hobby.</p>
+                <p style={ {margin: "10px 5px"} }>Sou <span style={ {color: "rgb(46, 46, 221)"} }>desenvolvedor back-end</span>, ainda sou um iniciante na área e não possuo experiência profissional, mas sempre estou estudando as tecnologias mais utilizadas no mercado. Além disso, nos tempos vagos sou desenvolvedor de baixo nível por hobby.</p>
                 <h4 className="m-0 mt-4" style={ {backgroundColor: "white", color: "black", padding: "4px 5px 0"} }>Escolaridade</h4>
                 <p style={ {margin: "10px 5px"} }>
                     <u>Dez_2022 - Atualmente</u> <i class="bi bi-calendar"></i><br/>
@@ -159,4 +158,21 @@ export function AboutContent() {
     );
 }
 
-export default { MainAfterContent, HomeContent, AboutContent };
+function PortfolioContent() {
+    return (
+        <>
+            <div>
+                <div className="portfolio-card text-start">
+                    <div>
+                        <img style={ {width: "250px", height: "126px"} } src="portfolio-img-1.png" alt="" />
+                    </div>
+                    <h2>Teste</h2>
+                    <p className="p-2 m-2" style={ {backgroundColor: "white", color: "black"} }>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mi in nulla posuere sollicitudin aliquam ultrices. Neque laoreet suspendisse interdum consectetur libero.</p>
+                    <button>Acesse aqui <i class="bi bi-rocket-takeoff-fill"></i></button>
+                </div>
+            </div>
+        </>
+    );
+};
+
+export default { MainAfterContent };
