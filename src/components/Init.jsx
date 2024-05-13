@@ -70,7 +70,7 @@ export default function InitEntrySystem() {
                     el.style.opacity = 0;
                 }, (index + 1) * 100);
             });
-
+            
             setShowMain(true);
         }, 6000);
     }, []);

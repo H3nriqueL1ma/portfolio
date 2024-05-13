@@ -1,6 +1,6 @@
 @media screen and (max-width: 1366px) {
     #card {
-        height: 430px;
+        min-height: 430px;
     }
 }
 

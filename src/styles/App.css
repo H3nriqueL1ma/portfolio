@@ -1,9 +1,11 @@
 @import url('https://fonts.cdnfonts.com/css/perfect-dos-vga-437');
 
+body {
+    background-color: black !important;
+}
+ 
 #main {
     font-family: 'Perfect DOS VGA 437 Win', sans-serif;
-    background-color: black;
-    height: 100vh;
 }
 
 #img {
@@ -59,15 +61,6 @@ span {
     border: none;
 }
 
-.navbar-toggler,
-.navbar-toggler:focus,
-.navbar-toggler:active,
-.navbar-toggler-icon:focus {
-    outline: none;
-    border: none;
-    box-shadow: none;
-}
-
 .nav-item a {
     color: white;
     transition: 0.4s;
@@ -78,10 +71,50 @@ span {
     color: rgb(46, 46, 221) !important;
 }
 
+.line {
+    height: 28px;
+    border-right: 1px solid rgba(255, 255, 255);
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.typing-animation {
+    animation: blinkCursor 1000ms steps(40) infinite normal, typing 4s steps(40) 1s normal both;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 13.6em;
+    }
+}
+
+@keyframes blinkCursor {
+    0% {
+        border-right-color: rgb(255, 255, 255);
+    }
+    50% {
+        border-right-color: rgb(255, 255, 255);
+    }
+    51% {
+        border-right-color: rgb(0, 0, 0);
+    }
+    100% {
+        border-right-color: rgb(0, 0, 0);
+    }
+}
+
+.line {
+    transition: border-color 0.1s ease;
+}
+
 #card {
     border: 2px solid white;
     border-radius: 2px;
-    min-height: 470px;
+    min-height: 72.8vh !important;
     width: 90vw;
     color: white;
 }
@@ -116,7 +149,77 @@ span {
 }
 
 .portfolio-card {
-    width: 300px;
-    border: 2px solid white;
+    margin-top: 3% !important;
+}
+
+.portfolio-card button {
+    border: none;
     border-radius: 2px;
+    background: none;
+    color: white;
+    padding: 5px;
+    margin-top: 10px;
+    transition: all 0.5s;
+}
+
+.portfolio-card button:hover {
+    color: black !important;
+    background-color: white !important;
+}
+
+.portfolio-card button:hover i {
+    color: black !important;
+}
+
+.portfolio-card i {
+    color: white;
+    font-size: 12pt !important;
+}
+
+.icons {
+    padding: 10px 10px 6px;
+}
+
+.font-icons {
+    font-size: 40pt;
+}
+
+.h4-about {
+    background-color: white;
+    color: black;
+    padding: 4px 5px 0;
+}
+
+.description-text {
+    background-color: white;
+    color: black !important;
+    border-radius: 2px;
+    min-height: 140px !important;
+    align-content: center;
+}
+
+.img-portfolio {
+    width: 400px !important;
+    height: 175px !important;
+    border: 4px solid rgb(46, 46, 221);
+    border-radius: 2px;
+    transition: 0.5s;
+}
+
+.img-overlay {
+    width: 400px;
+    height: 175px;
+    background-color: black;
+    opacity: 0.5;
+    position: absolute;
+    transition: 200ms all;
+    margin-left: -400px;
+}
+
+.img-overlay:hover {
+    opacity: 0 !important;
+}
+
+.fade-transition {
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
 }
