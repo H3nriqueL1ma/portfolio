@@ -216,24 +216,6 @@ span {
     transition: 0.5s;
 }
 
-.img-overlay {
-    width: 400px;
-    height: 175px;
-    background-color: black;
-    opacity: 0.5;
-    position: absolute;
-    transition: 0.4s;
-    margin-left: -400px;
-}
-
-.img-overlay:hover {
-    opacity: 0 !important;
-}
-
-.fade-transition {
-    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out !important;
-}
-
 form {
     width: 400px;
     border: 2px solid white;

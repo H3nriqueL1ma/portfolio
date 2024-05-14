@@ -57,39 +57,6 @@ export function MainAfterContent() {
                 el.style.opacity = 0;
             });
             setShowMain2(true);
-
-            const imgOverlay1 = document.querySelector("#overlay-1");
-            const imgOverlay2 = document.querySelector("#overlay-2");
-            const imgOverlay3 = document.querySelector("#overlay-3");
-            const img1 = document.querySelector("#img-1");
-            const img2 = document.querySelector("#img-2");
-            const img3 = document.querySelector("#img-3");
-    
-            if (imgOverlay1 && imgOverlay2 && imgOverlay3 && img1 && img2 && img3) {
-                imgOverlay1.addEventListener("mouseover", () => {
-                    img1.setAttribute("src", "portfolio-1.gif");
-                });
-    
-                imgOverlay1.addEventListener("mouseout", () => {
-                    img1.setAttribute("src", "portfolio-1-img.png");
-                });
-
-                imgOverlay2.addEventListener("mouseover", () => {
-                    img2.setAttribute("src", "portfolio-2.gif");
-                });
-
-                imgOverlay2.addEventListener("mouseout", () => {
-                    img2.setAttribute("src", "portfolio-2-img.png");
-                });
-
-                imgOverlay3.addEventListener("mouseover", () => {
-                    img3.setAttribute("src", "portfolio-3.gif");
-                });
-
-                imgOverlay3.addEventListener("mouseout", () => {
-                    img3.setAttribute("src", "portfolio-3-img.png");
-                });
-            }
         });
 
         contact.addEventListener("click", () => {
@@ -219,7 +186,6 @@ function PortfolioContent() {
                 <div className="col-5 portfolio-card text-center">
                     <div className="m-2">
                         <img id="img-1" className="m-0 img-portfolio" src="portfolio-1-img.png" alt="" />
-                        <span id="overlay-1" className="img-overlay"></span>
                     </div>
                     <h2>JetBridge</h2>
                     <p className="p-2 m-2 description-text">Página de uma empresa que oferece serviços de desenvolvimento de sites, feito para um Projeto Integrador estudantil.</p>
@@ -231,7 +197,6 @@ function PortfolioContent() {
                 <div className="col-5 portfolio-card text-center">
                     <div className="m-2">
                         <img id="img-2" className="m-0 img-portfolio" src="portfolio-2-img.png" alt="" />
-                        <span id="overlay-2" className="img-overlay"></span>
                     </div>
                     <h2>Grooming Pet</h2>
                     <p className="p-2 m-2 description-text">Site de uma empresa de serviços de PetMóvel, com agendamento de tosa e outros serviços, também feito para um Projeto Integrador estudantil.</p>
@@ -243,7 +208,6 @@ function PortfolioContent() {
                 <div className="col-5 portfolio-card text-center">
                     <div className="m-2">
                         <img id="img-3" className="m-0 img-portfolio" src="portfolio-3-img.png" alt="" />
-                        <span id="overlay-3" className="img-overlay"></span>
                     </div>
                     <h2>JetBridge</h2>
                     <p className="p-2 m-2 description-text">Uma tentativa de cópia de uma template do Behance, para exercitar minhas habilidades front-end.</p>
