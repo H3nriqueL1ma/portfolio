@@ -4,8 +4,14 @@ body {
     background-color: black !important;
 }
  
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
 #main {
     font-family: 'Perfect DOS VGA 437 Win', sans-serif;
+    margin-bottom: 2%;
 }
 
 #img {
@@ -38,6 +44,7 @@ span {
     margin-left: -30px;
     margin-top: -10px;
 }
+
 #main p {
     color: white;
     margin: 0;
@@ -117,6 +124,7 @@ span {
     min-height: 72.8vh !important;
     width: 90vw;
     color: white;
+    margin: 1% 0;
 }
 
 #card h1 {
@@ -150,6 +158,7 @@ span {
 
 .portfolio-card {
     margin-top: 3% !important;
+    width: 470px !important;
 }
 
 .portfolio-card button {
@@ -178,6 +187,7 @@ span {
 
 .icons {
     padding: 10px 10px 6px;
+    min-width: 80px;
 }
 
 .font-icons {
@@ -212,7 +222,7 @@ span {
     background-color: black;
     opacity: 0.5;
     position: absolute;
-    transition: 200ms all;
+    transition: 0.4s;
     margin-left: -400px;
 }
 
@@ -221,5 +231,47 @@ span {
 }
 
 .fade-transition {
-    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out !important;
+}
+
+form {
+    width: 400px;
+    border: 2px solid white;
+    border-radius: 2px;
+    padding: 30px 10px;
+    margin: auto;
+}
+
+form div + div {
+    margin: 20px 0 10px;
+}
+
+#content-form {
+    width: 300px;
+    margin: auto;
+}
+
+input, textarea {
+    border: none;
+    border-radius: 2px;
+    padding: 4px 10px;
+}
+
+form button {
+    border: 2px solid white;
+    transition: 0.3s;
+}
+
+form button:hover {
+    background-color: rgb(46, 46, 221);
+    color: white;
+}
+
+#subtitle {
+    background-color: white;
+    color: black;
+}
+
+textarea {
+    resize: none !important;
 }
