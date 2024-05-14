@@ -265,15 +265,15 @@ function ContactContent() {
                         <h3>Entre em contato!</h3><br/>
                         <div>
                             <label htmlFor="name">Seu Nome</label><br/>
-                            <input type="text" id="html" placeholder="Qual seu nome?"/>
+                            <input type="text" id="name" placeholder="Qual seu nome?"/>
                         </div>
                         <div>
-                            <label htmlFor="name">Seu E-mail</label><br/>
-                            <input type="text" id="html" placeholder="Qual seu e-mail?"/>
+                            <label htmlFor="email">Seu E-mail</label><br/>
+                            <input type="text" id="email" placeholder="Qual seu e-mail?"/>
                         </div>
                         <div>
-                            <label htmlFor="name">Sua Mensagem</label><br/>
-                            <textarea rows={4} cols={29} type="text" id="html" placeholder="Qual sua mensagem?"/>
+                            <label htmlFor="message">Sua Mensagem</label><br/>
+                            <textarea rows={4} cols={29} type="text" id="message" placeholder="Qual sua mensagem?"/>
                         </div>
 
                         <div className="text-end mt-5">
