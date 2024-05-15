@@ -87,7 +87,7 @@ span {
 }
 
 .typing-animation {
-    animation: blinkCursor 1000ms steps(40) infinite normal, typing 4s steps(40) 1s normal both;
+    animation: blinkCursor 1000ms steps(40) infinite normal, typing 2s steps(40) 1s normal both;
 }
 
 @keyframes typing {
