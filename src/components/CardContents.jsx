@@ -209,7 +209,7 @@ function PortfolioContent() {
                     <div className="m-2">
                         <img id="img-3" className="m-0 img-portfolio" src="portfolio-3-img.png" alt="" />
                     </div>
-                    <h2>JetBridge</h2>
+                    <h2>GOTO ANTARCTIC</h2>
                     <p className="p-2 m-2 description-text">Uma tentativa de cópia de uma template do Behance, para exercitar minhas habilidades front-end.</p>
                     <a href="https://h3nriquel1ma.github.io/site-template-behance-ice/" target="_blank">
                         <button>Acesse aqui <i className="bi bi-rocket-takeoff-fill"></i></button>
