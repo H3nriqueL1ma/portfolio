@@ -2,6 +2,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable import/no-anonymous-default-export */
 import { React, useState, useEffect } from "react";
+import { useForm } from "react-hook-form";
 
 export function MainAfterContent() {
     const [showMain, setShowMain] = useState(false);
@@ -221,23 +222,44 @@ function PortfolioContent() {
 };
 
 function ContactContent() {
+    const { register, handleSubmit } = useForm();
+
+    async function SubmitForm(data) {
+        
+    }
+
     return (
         <>
             <div>
-                <form>
+                <form onSubmit={handleSubmit(SubmitForm)}>
                     <div id="content-form" className="text-start">
                         <h3>Entre em contato!</h3><br/>
                         <div>
                             <label htmlFor="name">Seu Nome</label><br/>
-                            <input type="text" id="name" placeholder="Qual seu nome?"/>
+                            <input 
+                                type="text" 
+                                id="name" 
+                                placeholder="Qual seu nome?"
+                                autoFocus
+                                {...register("clientName")}/>
                         </div>
                         <div>
                             <label htmlFor="email">Seu E-mail</label><br/>
-                            <input type="text" id="email" placeholder="Qual seu e-mail?"/>
+                            <input 
+                            type="text" 
+                            id="email" 
+                            placeholder="Qual seu e-mail?"
+                            {...register("clientEmail")}/>
                         </div>
                         <div>
                             <label htmlFor="message">Sua Mensagem</label><br/>
-                            <textarea rows={4} cols={29} type="text" id="message" placeholder="Qual sua mensagem?"/>
+                            <textarea 
+                            rows={4} 
+                            cols={29} 
+                            type="text" 
+                            id="message" 
+                            placeholder="Qual sua mensagem?"
+                            {...register("clientMessage")}/>
                         </div>
 
                         <div className="text-end mt-5">
