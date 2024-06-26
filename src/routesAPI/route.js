@@ -1,4 +1,4 @@
-export async function sendEmail(url, data) {
+export default async function sendEmail(url, data) {
     const res = fetch(url, {
         method: "POST",
         headers: {

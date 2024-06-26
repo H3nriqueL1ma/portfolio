@@ -3,6 +3,9 @@
 /* eslint-disable import/no-anonymous-default-export */
 import { React, useState, useEffect } from "react";
 import { useForm } from "react-hook-form";
+import sendEmail from "../routesAPI/route";
+
+const URL_SEND_EMAIL = "http://localhost:8080/email/send";
 
 export function MainAfterContent() {
     const [showMain, setShowMain] = useState(false);
@@ -225,7 +228,13 @@ function ContactContent() {
     const { register, handleSubmit } = useForm();
 
     async function SubmitForm(data) {
-        
+        const res = sendEmail(URL_SEND_EMAIL, data);
+
+        if (res == 200) {
+
+        } else {
+            
+        }
     }
 
     return (
