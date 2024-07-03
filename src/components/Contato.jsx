@@ -35,7 +35,6 @@ export default function Contato() {
                                             type="text"
                                             id="name"
                                             placeholder="Qual seu nome?"
-                                            autoFocus
                                             {...register("clientName")}/>
                                     </div>
                                     <div id="email-contato">
