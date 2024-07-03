@@ -26,7 +26,7 @@ export default function Contato() {
                         <div className="card-contato p-4 m-auto mt-3">
                             <form onSubmit={handleSubmit(SubmitForm)}>
                                 <div id="text-title-form">
-                                    <h4>Entre em contato! <i class="bi bi-envelope-at-fill"></i></h4>
+                                    <h4>Entre em contato! <i className="bi bi-envelope-at-fill"></i></h4>
                                 </div>
                                 <div id="inputs" className="mt-3">
                                     <div id="name-contato">
