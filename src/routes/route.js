@@ -14,7 +14,7 @@ export default async function sendEmail(url, data) {
             throw new Error(`HTTP error! status: ${(await res).status}`);
         }
 
-        return (await res).status;
+        return responseData;
     } catch (error) {
         console.log("Error sending email: ", error);
         return 500;
