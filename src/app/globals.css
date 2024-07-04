@@ -173,6 +173,17 @@ body {
   margin-top: 2px;
 }
 
+#submit-form {
+  border-radius: 0px;
+  background-color: #C46638 !important;
+  border: 2px solid #C46638;
+  transition: 0.2s;
+}
+
+#submit-form:hover {
+  background-color: #101010 !important;
+}
+
 .java-text {
   font-weight: 300;
   color: white;

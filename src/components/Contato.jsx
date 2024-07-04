@@ -1,24 +1,32 @@
-import Link from "next/link";
-import { Col, Row } from "react-bootstrap";
+import { useState } from "react";
+import { Button, Col, Row } from "react-bootstrap";
 import { useForm } from "react-hook-form";
+import ModalResposta from "./ModalRespostaServidor";
+import sendEmail from "@/routes/route";
 
-const URL_SEND_EMAIL = "";
+const URL_SEND_EMAIL = "http://localhost:8080/email/send-email";
 
 export default function Contato() {
     const { register, handleSubmit } = useForm();
+    const [show, setShow] = useState(false);
+    const [content, setContent] = useState("");
+    const handleClose = () => setShow(false);
 
     async function SubmitForm(data) {
-        const res = sendEmail(URL_SEND_EMAIL, data);
+        const res = await sendEmail(URL_SEND_EMAIL, data);
 
-        if (res == 200) {
-
-        } else {
+        if (res === 200) {
+            setContent("Mensagem enviada com sucesso!");
             
+        } else {
+            setContent("Erro ao enviar mensagem. Tente novamente mais tarde!");
         }
+        setShow(true);
     }
 
     return (
         <>
+            <ModalResposta handleClose={handleClose} content={content} show={show}/>
             <div id="contato-content">
                 <h1 id="contato-title" className="java-text"><span>public void</span> contato() { '{' }</h1>
                 <Row className="m-0 m-auto mt-5 mb-5">
@@ -54,6 +62,9 @@ export default function Contato() {
                                             id="message"
                                             placeholder="Qual sua mensagem?"
                                             {...register("clientMessage")}/>
+                                    </div>
+                                    <div>
+                                        <Button type="submit" id="submit-form">Enviar</Button>
                                     </div>
                                 </div>
                             </form>
