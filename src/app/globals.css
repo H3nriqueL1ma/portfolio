@@ -184,6 +184,14 @@ body {
   background-color: #101010 !important;
 }
 
+.modal {
+  --bs-modal-header-border-color: none;
+}
+
+.modal-content {
+  border-radius: 10px;
+}
+
 .java-text {
   font-weight: 300;
   color: white;
