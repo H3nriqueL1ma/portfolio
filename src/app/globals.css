@@ -188,12 +188,8 @@ body {
   --bs-modal-header-border-color: none !important;
 }
 
-.modal-content {
-  border-radius: 10px !important;
-}
-
 .modal-header {
-  border-radius: 10px !important;
+  border-radius: 0 !important;
 }
 
 .java-text {
