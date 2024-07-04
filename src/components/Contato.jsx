@@ -17,7 +17,6 @@ export default function Contato() {
 
         if (res === 200) {
             setContent("Mensagem enviada com sucesso!");
-            
         } else if (res === 404) {
             setContent("Domínio de email inexistente!");
         } else {
