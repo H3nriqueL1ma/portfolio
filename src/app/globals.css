@@ -185,11 +185,11 @@ body {
 }
 
 .modal {
-  --bs-modal-header-border-color: none;
+  --bs-modal-header-border-color: none !important;
 }
 
 .modal-content {
-  border-radius: 10px;
+  border-radius: 10px !important;
 }
 
 .java-text {
