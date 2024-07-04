@@ -4,7 +4,7 @@ import { useForm } from "react-hook-form";
 import ModalResposta from "./ModalRespostaServidor";
 import sendEmail from "@/routes/route";
 
-const URL_SEND_EMAIL = "http://localhost:8080/email/send-email";
+const URL_SEND_EMAIL = "https://spring-portfolio-api.azurewebsites.net/email/send-email";
 
 export default function Contato() {
     const { register, handleSubmit } = useForm();
