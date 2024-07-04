@@ -18,6 +18,8 @@ export default function Contato() {
         if (res === 200) {
             setContent("Mensagem enviada com sucesso!");
             
+        } else if (res === 404) {
+            setContent("Domínio de email inexistente!");
         } else {
             setContent("Erro ao enviar mensagem. Tente novamente mais tarde!");
         }
@@ -43,7 +45,8 @@ export default function Contato() {
                                             type="text"
                                             id="name"
                                             placeholder="Qual seu nome?"
-                                            {...register("clientName")}/>
+                                            {...register("clientName")}
+                                            required/>
                                     </div>
                                     <div id="email-contato">
                                         <label htmlFor="email">Seu Email</label><br/>
@@ -51,7 +54,8 @@ export default function Contato() {
                                             type="text"
                                             id="email"
                                             placeholder="Qual seu email?"
-                                            {...register("clientEmail")}/>
+                                            {...register("clientEmail")}
+                                            required/>
                                     </div>
                                     <div id="message-contato">
                                         <label htmlFor="message">Sua Mensagem</label><br/>
@@ -61,7 +65,8 @@ export default function Contato() {
                                             type="text"
                                             id="message"
                                             placeholder="Qual sua mensagem?"
-                                            {...register("clientMessage")}/>
+                                            {...register("clientMessage")}
+                                            required/>
                                     </div>
                                     <div>
                                         <Button type="submit" id="submit-form">Enviar</Button>
