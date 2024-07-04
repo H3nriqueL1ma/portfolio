@@ -190,6 +190,7 @@ body {
 
 .modal-header {
   border-radius: 0 !important;
+  color: white !important;
 }
 
 .java-text {
