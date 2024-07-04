@@ -14,7 +14,6 @@ export default function Contato() {
 
     async function SubmitForm(data) {
         const res = await sendEmail(URL_SEND_EMAIL, data);
-        console.log(res);
 
         if (res === 200) {
             setContent("Mensagem enviada com sucesso!");
