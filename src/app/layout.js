@@ -1,4 +1,5 @@
 import "./globals.css";
+import "./mediaqueries.css";
 
 export const metadata = {
   title: "Henrique's Portfolio"
