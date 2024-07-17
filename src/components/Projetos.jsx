@@ -58,13 +58,13 @@ export default function Projetos() {
                     <Col lg={6}>
                         <div className="card-projeto p-4 d-grid">
                             <div id="type-projeto">
-                                <p>Java 21 + Spring + PostgreSQL + SMTP Gmail <i className="devicon-spring-original"></i></p>
+                                <p style={ {fontSize: "13.1px !important"} }>Java 21 + Spring + PostgreSQL + SMTP Gmail <i className="devicon-spring-original"></i></p>
                             </div>
                             <div id="title-projeto">
                                 <h4>Plann.er RESTful API - Planejador de Viagens</h4>
                             </div>
                             <div id="description-projeto">
-                                <p>Uma API para planejamento de viagens, onde permite o cadastro de viagem (destino, data de ida e retorno e convidados usando email), confirmação da viagem por email, confirmação dos convidados com email de Presença Confirmada, validação de email, criação de atividades, bem como assinalar a atividade como completa ou pendente, criação de links e validação de links. Foi construída usando Java 21, Spring, driver para conexão com o banco PostgreSQL e um servidor SMTP para envio dos emails.</p>
+                                <p style={ {fontSize: "11.8px !important"} }>Uma API para planejamento de viagens, onde permite o cadastro de viagem, confirmação da viagem por email, confirmação dos convidados com email de Presença Confirmada, validação de email, criação de atividades, assinalar a atividade como completa ou pendente, criação de links e validação de links. Foi construída usando Java 21, Spring, driver para conexão com o banco PostgreSQL e um servidor SMTP para envio dos emails.</p>
                             </div>
                             <div id="view-projeto">
                                 <Link target="_blank" rel="noopener noreferrer" href={"https://github.com/H3nriqueL1ma/spring-planner-api-modular"}>Visualizar Projeto</Link>
