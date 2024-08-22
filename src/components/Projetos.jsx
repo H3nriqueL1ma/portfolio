@@ -5,7 +5,6 @@ export default function Projetos() {
     return (
         <>
             <div id="projetos-content">
-                <h1 id="projetos-title" className="java-text"><span>public</span> String[] projetos { '{' }</h1>
                 <Row id="row-projeto" className="m-0 m-auto mt-4 mb-5">
                     <Col lg={6}>
                         <div className="card-projeto p-4 d-grid">
@@ -136,7 +135,6 @@ export default function Projetos() {
                         </div>
                     </Col>
                 </Row>
-                <h1 id="projetos-title" className="java-text">{ '}' }</h1>
             </div>
         </>
     );

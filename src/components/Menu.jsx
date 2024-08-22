@@ -7,7 +7,7 @@ export default function Menu() {
         <Navbar className="bg-body-tertiary justify-content-between" id="navbar">
             <Container className="m-0">
                 <Navbar.Brand>
-                    <h1 id="title" className="java-text"><span>public class</span> Developer <span>extends</span> Portfolio { '{' }</h1> 
+                    <img src="logo.png" alt="logo" width={60} />
                 </Navbar.Brand>
             </Container>
             <div>

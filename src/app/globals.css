@@ -5,6 +5,71 @@ body {
   font-family: "Source Code Pro", monospace !important;
 }
 
+/*####################### INTRO #######################*/
+#intro {
+  background-color: #333;
+  animation: fadeOutBG 3s 4s forwards;
+  height: 100vh;
+}
+
+.text-intro h1 {
+  font-size: 20px;
+  opacity: 0;
+  color: white;
+  animation: fadeInText 2s 1s forwards;
+}
+
+#loading {
+  opacity: 0;
+  animation: fadeInLoader 2s 1.1s forwards;
+}
+
+@keyframes fadeInText {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeInLoader {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOutBG {
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+.fade-out {
+  animation: fadeOutBG 0.5s forwards;
+}
+
+.fade-in {
+  visibility: visible;
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 /*####################### MENU #######################*/
 
 #navbar {
@@ -33,6 +98,10 @@ body {
 
 /*####################### CONTEÚDO "BANNER" #######################*/
 
+#dev-div {
+  margin-top: 110px;
+}
+
 #text {
   color: white;
 }
@@ -44,72 +113,36 @@ body {
 }
 
 #text h1 {
-  font-family: "Inter";
-  font-size: 90px;
+  font-family: "Inter", sans-serif;
+  font-size: 60px;
   font-weight: 400;
-  margin: 0 0 50px;
 }
 
-#logo-portfolio {
-  width: 500px;
+#about-me {
+  margin-top: 160px;
+}
+
+#about-me-content {
+  margin-top: 80px;
+  width: 100vw;
+  padding: 30px 200px;
+  background-color: #C46638;
 }
 
 /*####################### TECNOLOGIAS #######################*/
 
-#tecnologias-content, #projetos-content, #contato-content {
-  margin-top: 100px;
+#techs {
+  font-size: 50px;
 }
 
-#tecnologias-title, #projetos-title, #contato-title {
-  margin: 0 100px;
+#techs i {
+  border: 2px solid #aa5b36;
+  border-radius: 5px;
+  padding: 7px;
 }
 
-.row {
-  max-width: 810px;
-}
-
-.row .col-lg-4 {
-  margin-top: 10px;
-}
-
-.accordion {
-  --bs-accordion-bg: #101010 !important;
-}
-
-.accordion-item {
-  width: 260px;
-  --bs-accordion-border-color: #101010 !important;
-}
-
-.accordion-button {
-  height: 200px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.accordion-button i {
-  font-size: 100px;
-  color: white !important;
-}
-
-.accordion-button:focus {
-  box-shadow: none !important;
-}
-
-.accordion-button:not(.collapsed) {
-  color: white !important;
-  background-color: transparent !important;
-}
-
-.accordion-button:not(.collapsed)::after, .accordion-button::after {
-  display: none;
-}
-
-.accordion-body {
-  font-size: 12px;
-  color: white !important;
-  text-align: center;
+#techs i + i {
+  margin-left: 20px;
 }
 
 /*####################### PROJETOS #######################*/
@@ -154,8 +187,13 @@ body {
 
 /*####################### CONTATO #######################*/
 
+#contato-content {
+  background-color: #C46638;
+  margin-top: 180px;
+  padding: 30px 0;
+}
+
 .card-contato {
-  margin-top: 40px;
   background-color: #101010;
   width: 400px;
   border-color: #C46638;

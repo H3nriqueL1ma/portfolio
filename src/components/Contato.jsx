@@ -29,10 +29,9 @@ export default function Contato() {
         <>
             <ModalResposta handleClose={handleClose} content={content} show={show}/>
             <div id="contato-content">
-                <h1 id="contato-title" className="java-text"><span>public void</span> contato() { '{' }</h1>
-                <Row className="m-0 m-auto mt-5 mb-5">
+                <Row className="m-0 m-auto">
                     <Col lg={12}>
-                        <div className="card-contato p-4 m-auto mt-3">
+                        <div className="card-contato p-4 m-auto ">
                             <form onSubmit={handleSubmit(SubmitForm)}>
                                 <div id="text-title-form">
                                     <h4>Entre em contato! <i className="bi bi-envelope-at-fill"></i></h4>
@@ -75,9 +74,7 @@ export default function Contato() {
                         </div>
                     </Col>
                 </Row>
-                <h1 id="contato-title" className="java-text">{ '}' }</h1>
             </div>
-            <h1 id="title" className="java-text chave-final">{ '}' }</h1> 
         </>
     );
 }
