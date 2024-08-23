@@ -11,7 +11,7 @@ export default function DevContent() {
                         <i className="bi bi-arrow-down"></i>
                     </div>
                     <div id="about-me-content" className="row m-0">
-                        Sou um desenvolvedor backend iniciante focado em criar soluções eficientes e escaláveis. Minhas principais stacks são Java, Spring, Docker e PostgreSQL. Gosto de trabalhar em ambientes Linux, utilizando o terminal para otimizar meu fluxo de trabalho. Atualmente, estou desenvolvendo projetos que envolvem APIs, microsserviços, arquitetura MVC e princípios SOLID, buscando sempre aprender e aplicar novas tecnologias.
+                        <p className="m-auto">Sou um desenvolvedor backend iniciante focado em criar soluções eficientes e escaláveis. Minhas principais stacks são Java, Spring, Docker e PostgreSQL. Gosto de trabalhar em ambientes Linux, utilizando o terminal para otimizar meu fluxo de trabalho. Atualmente, estou desenvolvendo projetos que envolvem APIs, microsserviços, arquitetura MVC e princípios SOLID, buscando sempre aprender e aplicar novas tecnologias.</p>
 
                         <div id="techs" className="col-lg-12 mt-5 d-flex flex-wrap justify-content-center gap-2">
                             <i className="devicon-java-plain"></i>

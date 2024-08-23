@@ -59,7 +59,6 @@ export default function Contato() {
                                         <label htmlFor="message">Sua Mensagem</label><br/>
                                         <textarea
                                             rows={4}
-                                            cols={40} 
                                             type="text"
                                             id="message"
                                             placeholder="Qual sua mensagem?"

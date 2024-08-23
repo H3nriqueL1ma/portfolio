@@ -123,10 +123,13 @@ body {
 }
 
 #about-me-content {
-  margin-top: 80px;
-  width: 100vw;
-  padding: 30px 200px;
+  margin-top: 80px !important;
+  padding: 30px 60px;
   background-color: #C46638;
+}
+
+#about-me-content p {
+  max-width: 1000px;
 }
 
 /*####################### TECNOLOGIAS #######################*/
@@ -205,6 +208,10 @@ body {
   padding: 4px 10px;
   max-width: 350px;
   margin-top: 2px;
+}
+
+#message {
+  width: 400px;
 }
 
 #submit-form {

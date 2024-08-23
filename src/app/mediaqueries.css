@@ -184,4 +184,19 @@
     #description-projeto p {
         font-size: 13px !important;
     }
+
+    #about-me-content {
+        font-size: 14px !important;
+        padding: 30px 40px !important;
+    }
+}
+
+@media screen and (max-width: 435px) {
+    .card-contato {
+        width: 320px !important;
+    }
+
+    #message {
+        width: 275px !important;
+    }
 }
