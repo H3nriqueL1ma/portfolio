@@ -10,19 +10,22 @@ export default function Menu() {
                     <img src="logo.png" alt="logo" width={60} />
                 </Navbar.Brand>
             </Container>
-            <div>
-                <Link target="_blank" rel="noopener noreferrer" href={"https://www.linkedin.com/in/henrique-lima-51b957264/"}>
-                    <Button id="github-button" className="social-button">
-                        <i className="bi bi-linkedin"></i>
-                    </Button>
-                </Link>
-            </div>
-            <div id="github-div">
-                <Link target="_blank" rel="noopener noreferrer" href={"https://github.com/H3nriqueL1ma"}>
-                    <Button id="github-button" className="social-button">
-                        <i className="bi bi-github"></i>
-                    </Button>
-                </Link>
+            <div className="d-flex">
+                <div>
+                    <Link target="_blank" rel="noopener noreferrer"
+                          href={"https://www.linkedin.com/in/henrique-lima-51b957264/"}>
+                        <Button id="github-button" className="social-button">
+                            <i className="bi bi-linkedin"></i>
+                        </Button>
+                    </Link>
+                </div>
+                <div id="github-div">
+                    <Link target="_blank" rel="noopener noreferrer" href={"https://github.com/H3nriqueL1ma"}>
+                        <Button id="github-button" className="social-button">
+                            <i className="bi bi-github"></i>
+                        </Button>
+                    </Link>
+                </div>
             </div>
         </Navbar>
         </>

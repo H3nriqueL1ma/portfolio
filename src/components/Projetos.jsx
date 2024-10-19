@@ -12,7 +12,7 @@ export default function Projetos() {
                                 <p>Java 17 + Spring + PostgreSQL <i className="devicon-spring-original"></i></p>
                             </div>
                             <div id="title-projeto">
-                                <h4>Todo List RESTful API v2 - Gerenciador de Tarefas</h4>
+                                <h4>Todo List API - Gerenciador de Tarefas</h4>
                             </div>
                             <div id="description-projeto">
                                 <p>Uma API para gerenciamento de tarefas Todo List, onde permite o cadastro de usuários, autenticação Basic Auth para login, recuperação de senha, cadastro, edição e exclusão de tarefas, além de listagem de tarefas completas, pendentes e gerais. Foi construída usando Java 17, Spring e driver para conexão com o banco PostgreSQL.</p>
@@ -28,45 +28,13 @@ export default function Projetos() {
                                 <p>Java 17 + Spring + SMTP Gmail <i className="devicon-spring-original"></i></p>
                             </div>
                             <div id="title-projeto">
-                                <h4>RESTful API Portfolio - Envio de Emails</h4>
+                                <h4>API Portfolio - Envio de Emails</h4>
                             </div>
                             <div id="description-projeto">
                                 <p>Uma API para envio de e-mails, onde permite o envio de emails do cliente de um formulário de contato para o meu email. Foi construída usando Java 17, Spring e um servidor SMTP para envio dos emails.</p>
                             </div>
                             <div id="view-projeto">
                                 <Link target="_blank" rel="noopener noreferrer" href={"https://github.com/H3nriqueL1ma/portfolio-api"}>Visualizar Projeto</Link>
-                            </div>
-                        </div>
-                    </Col>
-                    <Col lg={6}>
-                        <div className="card-projeto p-4 d-grid">
-                            <div id="type-projeto">
-                                <p>Express.js + PostgreSQL <i className="devicon-express-original"></i></p>
-                            </div>
-                            <div id="title-projeto">
-                                <h4>Todo List RESTful API v1 - Gerenciador de Tarefas</h4>
-                            </div>
-                            <div id="description-projeto">
-                                <p>Primeira versão da API para gerenciamento de tarefas Todo List. Foi construída usando Express.js e cliente Postgres.js para conexão com o banco PostgreSQL.</p>
-                            </div>
-                            <div id="view-projeto">
-                                <Link target="_blank" rel="noopener noreferrer" href={"https://github.com/H3nriqueL1ma/rest-api-express-postgres"}>Visualizar Projeto</Link>
-                            </div>
-                        </div>
-                    </Col>
-                    <Col lg={6}>
-                        <div className="card-projeto p-4 d-grid">
-                            <div id="type-projeto">
-                                <p style={ {fontSize: "13.1px !important"} }>Java 21 + Spring + PostgreSQL + SMTP Gmail <i className="devicon-spring-original"></i></p>
-                            </div>
-                            <div id="title-projeto">
-                                <h4>Plann.er RESTful API - Planejador de Viagens</h4>
-                            </div>
-                            <div id="description-projeto">
-                                <p style={ {fontSize: "11.8px !important"} }>Uma API para planejamento de viagens, onde permite o cadastro de viagem, confirmação da viagem por email, confirmação dos convidados com email de Presença Confirmada, validação de email, criação de atividades, assinalar a atividade como completa ou pendente, criação de links e validação de links. Foi construída usando Java 21, Spring, driver para conexão com o banco PostgreSQL e um servidor SMTP para envio dos emails.</p>
-                            </div>
-                            <div id="view-projeto">
-                                <Link target="_blank" rel="noopener noreferrer" href={"https://github.com/H3nriqueL1ma/spring-planner-api-modular"}>Visualizar Projeto</Link>
                             </div>
                         </div>
                     </Col>
